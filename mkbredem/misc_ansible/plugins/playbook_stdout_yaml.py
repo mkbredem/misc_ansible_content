@@ -24,6 +24,15 @@ Place the sample output in a file named ansible_output.txt.
 Run the script with python ansible_output_parser.py.
 The parsed YAML will be saved in a file named ansible_output_parsed.yaml.
 This script is designed to be a starting point and might need adjustments based on variations in actual Ansible playbook outputs.
+
+Phase 1:
+
+Get the file to parse the sample output file as desired.
+
+Phase 2:
+
+Once parsing works as expected, convert project to accept play output as a variable passed as
+an argument to the plugin and return a yaml formatted dictionary instead of writing to a file.
 '''
 
 import re
